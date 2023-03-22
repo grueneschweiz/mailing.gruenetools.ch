@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mailing.gruenetools.ch</title>
+    <link
+      rel="preload"
+      href="/OpenSans-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="/OpenSans-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin=""
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .init-loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: "Open Sans",sans-serif;
+      }
+      @keyframes spinner-border {
+        to {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .spinner-border {
+        color: #84B414;
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        vertical-align: text-bottom;
+        border: 0.25em solid currentColor;
+        border-right-color: transparent;
+        border-radius: 50%;
+        animation: spinner-border 0.75s linear infinite;
+        margin: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="init-loader">
+        <div class="spinner-border" role="status"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

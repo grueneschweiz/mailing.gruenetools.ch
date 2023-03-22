@@ -1,0 +1,29 @@
+.iban-input {
+  position: relative;
+  width: 100%;
+  max-width: 15em;
+  margin-bottom: 1.5em;
+}
+
+.iban-input__input {
+  padding: 0.5em 2em 0.5em 0.75em;
+  width: 100%;
+}
+
+.iban-input__input.valid {
+  border-color: var(--color-primary);
+}
+
+.iban-input__input.invalid {
+  border-color: var(--color-error);
+}
+
+.iban-input__input::placeholder {
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.input__input-hint {
+  position: absolute;
+  right: 0.4em;
+  bottom: 0.3em;
+}

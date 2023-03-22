@@ -1,0 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------ */
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/OpenSans-Regular.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/OpenSans-Bold.ttf') format('truetype')
+}
+
+:root {
+  --color-primary: #84B414;
+  --color-primary-light: #CEE1A1;
+  --color-primary-dark: #516F0A;
+  
+  --color-secondary: #e10078;
+  --color-secondary-light: #f0cee1;
+  --color-secondary-dark: #B1025F;
+
+  --color-text-dark: #333333;
+  --color-text-light: #dddddd;
+  --color-text: var(--color-text-light);
+
+  --color-text-muted: #999999;
+
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #333333;
+  --color-bg: var(--color-bg-dark);
+
+  --color-error: #EF0606;
+
+  --font-title: "Arial Black",OpenSansBold,Gadget,sans-serif;
+  --font-text: "Open Sans",sans-serif;
+
+  font-family: var(--font-text);
+  line-height: 1.75em;
+
+  color-scheme: light dark;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
+  text-decoration-style: underline;
+  text-decoration-thickness: 0.2em;
+  transition: all 0.2s ease-in-out;
+}
+a:hover, a:focus {
+  color: var(--color-primary-light);
+  text-decoration-color: var(--color-primary-light);
+}
+
+@media (prefers-color-scheme: light) {
+  a {
+    color: var(--color-primary-dark);
+    text-decoration-color: var(--color-primary-dark);
+  }
+  a:hover, a:focus {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
+  }
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 1em 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.3em;
+  color: var(--color-primary);
+  font-family: var(--font-title);
+}
+
+strong {
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+input {
+  display: block;
+  padding: 0.4em 0.6em;
+  border: 2px solid #aaaaaa;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  background: rgba(172, 172, 172, 0.5);
+}
+
+input:focus, input:hover {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+ol, ul {
+  list-style-position: inside;
+  line-height: 1.5em;
+}
+
+ol ol, ol ul, ul ol, ul ul {
+  padding-left: 1.5em;
+  margin-bottom: 1em
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text: var(--color-text-dark);
+    --color-bg: var(--color-bg-light);
+  }
+}

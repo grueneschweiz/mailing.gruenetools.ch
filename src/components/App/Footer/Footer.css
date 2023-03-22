@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.footer__imprint {
+  margin-top: 1em;
+  display: flex;
+  gap: 2em;
+  align-items: end;
+  color: var(--color-text-muted);
+  font-size: 0.8em;
+}
+
+.footer_logo {
+  width: 25vw;
+  max-width: 200px;
+  opacity: 0.9;
+}
+
+.footer__credits,
+.footer__credits a {
+  font-size: 0.8em;
+  color: var(--color-text-muted);
+  text-align: center;
+  text-decoration-color: var(--color-text-muted);
+}
+
+.footer_mail {
+  color: var(--color-text-muted);
+  text-decoration-color: var(--color-text-muted);
+  display: block;
+  margin-top: 0.5em;
+}
+

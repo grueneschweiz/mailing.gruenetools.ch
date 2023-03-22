@@ -1,0 +1,47 @@
+.main__type-selector-container {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin-left: 5px;
+}
+
+.main__type-selector {
+  cursor: pointer;
+  border: 2px solid rgba(132, 180, 20, 0.5);
+  background: rgba(132, 180, 20, 0.1);
+  opacity: 0.5;
+  border-radius: 5px 5px 0 0;
+  padding: 0.5em 1em;
+  border-bottom: 2px solid transparent;
+  margin-right: 5px;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 2px;
+  transform: translateY(2px);
+}
+
+.main__type-selector:hover,
+.main__type-selector:focus,
+.main__type-selector:focus-within {
+  opacity: 1;
+  border: solid 2px rgba(132, 180, 20, 1);
+  margin-bottom: 0;
+  padding-bottom: calc(0.5em + 2px);
+}
+
+.main__type-selector.active {
+  opacity: 1;
+  background: rgba(132, 180, 20, 0.5);
+}
+
+.main__type-selector-input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.main__action-box {
+  border: 2px solid rgba(132, 180, 20, 0.5);
+  background: rgba(132, 180, 20, 0.1);
+  border-radius: 5px;
+  padding: 1em 1.5em 1.5em;
+}
