@@ -1,6 +1,6 @@
 {
-  "title": "Préparer des adresses pour des envois postaux",
-  "intro": "Exportez les adresses et éventuellement les données de facturation de Webling, glissez le fichier dans la zone prévue à cet effet ci-dessous et vous obtiendrez un nouveau fichier Excel avec tous les champs dont vous avez besoin pour imprimer un publipostage.",
+  "title": "Préparer les adresses d'un envoi postal",
+  "intro": "Exportez les adresses et éventuellement les données de facturation de Webling, puis glissez le fichier ainsi généré dans la zone prévue à cet effet ci-dessous et vous obtiendrez un nouveau fichier Excel avec tous les champs dont vous avez besoin pour imprimer un publipostage.",
   "invoices": "Facture avec numéro de référence",
   "addresses-only": "Adresses uniquement",
   "step-1": "Exportez vos adresses de {{link}} :",
