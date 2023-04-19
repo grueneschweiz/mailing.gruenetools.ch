@@ -12,6 +12,7 @@ export default function Footer() {
       {t("org-name")}
     </a>
   );
+  const email = i18n.language === "fr" ? "verts@verts.ch" : "gruene@gruene.ch"
 
   const githubLinkTag = (
     <a
@@ -40,8 +41,8 @@ export default function Footer() {
           <br />
           3011 Bern
           <br />
-          <a className="footer_mail" href="mailto:gruene@gruene.ch" target="_blank">
-            gruene@gruene.ch
+          <a className="footer_mail" href={`mailto:${email}`} target="_blank">
+            {email}
           </a>
         </p>
       </div>
